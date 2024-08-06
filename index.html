@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ass1</title>
+    <style>
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            border-radius: 20px;
+            margin: auto;
+            padding: 10px;
+            font-size: 30px;
+          
+            
+        }
+        button{
+            border-radius: 5px;
+            margin-left: 40px;
+            margin-top: 5px;
+            background-color: rgba(255, 255, 255, 0.1);
+           
+        }
+        img{
+            width: 80%;
+            height: 80%;
+            margin: auto;
+
+            
+            
+        }
+    </style>
+  </head>
+  <body>
+    <input id="in1" type="text" value="write a text" ><br><br>
+    <div class="container">
+        <button onclick="increase()">increase</button>
+        <button  onclick="decrease()">decrease</button>
+        <button  onclick="change()">change color</button>
+        <button  onclick="opac()">opacity</button>
+        <button  onclick="clearIn()">clear</button>
+    </div><br><br><hr><br>
+    <div class="container">
+        <img id="im" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuhdijs6flMuSIlAPUiLiFA_MD5x2Y_41hWQ&s">
+    </div><br><br>
+    <div class="container">
+        <button onclick="bord()">Border</button>
+        <button  onclick="bordRad()">border-radius</button>
+        <button  onclick="imgOpac()">opacity</button>
+        <button  onclick="show()">Show</button>
+        <button  onclick="hiddenIm()">Hide</button>
+        <button  onclick="defOoac()">Defult opacity</button>
+    </div>
+
+    <script>
+        function increase(){
+            document.getElementById("in1").style.fontSize ="50px"
+        }
+        function decrease(){
+            document.getElementById("in1").style.fontSize ="15px"
+        }
+        function change(){
+            document.getElementById("in1").style.color ="green"
+        }
+        function opac(){
+            document.getElementById("in1").style.opacity ="0.5"
+        }
+        function clearIn(){
+            document.getElementById("in1").value =" "
+        }
+
+
+        function bord(){
+            document.getElementById("im").style.border ="10px solid"
+        }
+        function bordRad(){
+            document.getElementById("im").style.borderRadius ="25px"
+        }
+        function imgOpac(){
+            document.getElementById("im").style.opacity ="0.5"
+        }
+        function show(){
+            document.getElementById("im").style.display ="block"
+        }
+        function hiddenIm(){
+            document.getElementById("im").style.display =" none"
+        }
+        function defOoac(){
+            document.getElementById("im").style.opacity =" 1"
+        }
+       
+
+        
+
+
+    </script>
+
+  </body>
+</html>
